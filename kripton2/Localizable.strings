@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  kripton2
+
+  Created by Jorge Arindia on 27/10/22.
+  
+*/
+
+// Common
+"next_label" = "SIGUIENTE";
+
+// WelcomePage
+"welcome_title" = "Comenzar ahora mismo";
+"welcome_message" = "Te damos la bienvenida a ser parte de Urbano, empresa líder en distribución logística de última milla, con Kriptón HD podrás gestionar tus pedidos.";

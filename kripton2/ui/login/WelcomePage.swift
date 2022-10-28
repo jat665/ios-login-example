@@ -15,7 +15,7 @@ struct WelcomePage: View {
       HStack {
         Spacer()
         
-        Image("Logo")
+        Image(ImageAssets.Logo.rawValue)
         
         Spacer()
       }
@@ -23,10 +23,10 @@ struct WelcomePage: View {
       .background(.red)
       
       VStack(alignment: .leading, spacing: 16) {
-        Text("Comenzar ahora mismo")
+        Text("welcome_title".localized)
           .fontWeight(.bold)
         
-        Text("Te damos la bienvenida a ser parte de Urbano, empresa líder en distribución logística de última milla, con Kriptón HD podrás gestionar tus pedidos.")
+        Text("welcome_message".localized)
       }.padding()
       
       Spacer()
@@ -34,7 +34,7 @@ struct WelcomePage: View {
       HStack {
         Spacer()
         
-        Button("SIGUIENTE") {}
+        Button("next_label".localized) {}
           .foregroundColor(.red)
           .padding()
       }
