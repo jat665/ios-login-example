@@ -14,6 +14,7 @@
 		9DFE4738290B735E008984F7 /* kripton2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE4737290B735E008984F7 /* kripton2Tests.swift */; };
 		9DFE4742290B735E008984F7 /* kripton2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE4741290B735E008984F7 /* kripton2UITests.swift */; };
 		9DFE4744290B735E008984F7 /* kripton2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE4743290B735E008984F7 /* kripton2UITestsLaunchTests.swift */; };
+		9DFE4753290B779F008984F7 /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE4752290B779F008984F7 /* WelcomePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		9DFE473D290B735E008984F7 /* kripton2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kripton2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFE4741290B735E008984F7 /* kripton2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kripton2UITests.swift; sourceTree = "<group>"; };
 		9DFE4743290B735E008984F7 /* kripton2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kripton2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9DFE4752290B779F008984F7 /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		9DFE4725290B735D008984F7 /* kripton2 */ = {
 			isa = PBXGroup;
 			children = (
+				9DFE4750290B7781008984F7 /* ui */,
 				9DFE4726290B735D008984F7 /* kripton2App.swift */,
 				9DFE4728290B735D008984F7 /* ContentView.swift */,
 				9DFE472A290B735E008984F7 /* Assets.xcassets */,
@@ -125,6 +128,22 @@
 				9DFE4743290B735E008984F7 /* kripton2UITestsLaunchTests.swift */,
 			);
 			path = kripton2UITests;
+			sourceTree = "<group>";
+		};
+		9DFE4750290B7781008984F7 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				9DFE4751290B7787008984F7 /* login */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		9DFE4751290B7787008984F7 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				9DFE4752290B779F008984F7 /* WelcomePage.swift */,
+			);
+			path = login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DFE4753290B779F008984F7 /* WelcomePage.swift in Sources */,
 				9DFE4729290B735D008984F7 /* ContentView.swift in Sources */,
 				9DFE4727290B735D008984F7 /* kripton2App.swift in Sources */,
 			);
