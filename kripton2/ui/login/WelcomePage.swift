@@ -10,33 +10,39 @@ import SwiftUI
 struct WelcomePage: View {
   var body: some View {
     
-    VStack {
-      
-      HStack {
-        Spacer()
-        
-        Image(ImageAssets.Logo.rawValue)
-        
-        Spacer()
-      }
-      .frame(height: 200)
-      .background(.red)
-      
-      VStack(alignment: .leading, spacing: 16) {
-        Text("welcome_title".localized)
-          .fontWeight(.bold)
-        
-        Text("welcome_message".localized)
-      }.padding()
-      
-      Spacer()
-      
-      HStack {
-        Spacer()
-        
-        Button("next_label".localized) {}
-          .foregroundColor(.red)
-          .padding()
+    GeometryReader { geometry in
+      NavigationView {
+        VStack {
+          
+          HStack {
+            Spacer()
+            
+            Image(ImageAssets.Logo.rawValue)
+            
+            Spacer()
+          }
+          .frame(height: geometry.size.height * 0.4)
+          .background(.red)
+          
+          VStack(alignment: .leading, spacing: 16) {
+            Text("welcome_title".localized)
+              .fontWeight(.bold)
+            
+            Text("welcome_message".localized)
+          }.padding()
+          
+          Spacer()
+          
+          HStack {
+            Spacer()
+            
+            NavigationLink(destination: LoginPage()) {
+              Text("next_label".localized)
+                .foregroundColor(.red)
+                .padding()
+            }
+          }
+        }
       }
     }
   }

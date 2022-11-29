@@ -12,3 +12,10 @@
 // WelcomePage
 "welcome_title" = "Comenzar ahora mismo";
 "welcome_message" = "Te damos la bienvenida a ser parte de Urbano, empresa líder en distribución logística de última milla, con Kriptón HD podrás gestionar tus pedidos.";
+
+// LoginPage
+"login_username_placeholder" = "NOMBRE DE USUARIO";
+"login_password_placeholder" = "CONTRASEÑA";
+"login_label" = "ENTRAR";
+"login_sign_up_label" = "¿No tienes una cuenta? Registrate";
+"login_forgot_password_label" = "¿Olvidaste tu contraseña?";

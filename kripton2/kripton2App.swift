@@ -11,7 +11,7 @@ import SwiftUI
 struct kripton2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginPage()
         }
     }
 }

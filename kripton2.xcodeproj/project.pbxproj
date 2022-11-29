@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9DBA515E29134E0200B7A497 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBA515D29134E0200B7A497 /* LoginViewModel.swift */; };
 		9DFE4727290B735D008984F7 /* kripton2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE4726290B735D008984F7 /* kripton2App.swift */; };
 		9DFE4729290B735D008984F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE4728290B735D008984F7 /* ContentView.swift */; };
 		9DFE472B290B735E008984F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DFE472A290B735E008984F7 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 		9DFE4755290B7D82008984F7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DFE4754290B7D82008984F7 /* Localizable.strings */; };
 		9DFE4758290B7FCC008984F7 /* String+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE4757290B7FCC008984F7 /* String+Extentions.swift */; };
 		9DFE475A290B8106008984F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE4759290B8106008984F7 /* Constants.swift */; };
+		9DFE475C290B83D2008984F7 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE475B290B83D2008984F7 /* LoginPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9DBA515D29134E0200B7A497 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		9DFE4723290B735D008984F7 /* kripton2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kripton2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFE4726290B735D008984F7 /* kripton2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kripton2App.swift; sourceTree = "<group>"; };
 		9DFE4728290B735D008984F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +55,7 @@
 		9DFE4754290B7D82008984F7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9DFE4757290B7FCC008984F7 /* String+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extentions.swift"; sourceTree = "<group>"; };
 		9DFE4759290B8106008984F7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9DFE475B290B83D2008984F7 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DBA515C29134DDA00B7A497 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				9DFE475B290B83D2008984F7 /* LoginPage.swift */,
+				9DBA515D29134E0200B7A497 /* LoginViewModel.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
 		9DFE471A290B735C008984F7 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +162,7 @@
 		9DFE4751290B7787008984F7 /* login */ = {
 			isa = PBXGroup;
 			children = (
+				9DBA515C29134DDA00B7A497 /* login */,
 				9DFE4752290B779F008984F7 /* WelcomePage.swift */,
 			);
 			path = login;
@@ -298,7 +312,9 @@
 				9DFE4753290B779F008984F7 /* WelcomePage.swift in Sources */,
 				9DFE4758290B7FCC008984F7 /* String+Extentions.swift in Sources */,
 				9DFE4729290B735D008984F7 /* ContentView.swift in Sources */,
+				9DFE475C290B83D2008984F7 /* LoginPage.swift in Sources */,
 				9DFE4727290B735D008984F7 /* kripton2App.swift in Sources */,
+				9DBA515E29134E0200B7A497 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,7 +490,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -503,7 +519,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
